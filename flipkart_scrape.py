@@ -123,7 +123,7 @@ def lis_of_product_url_in_page(url):
 
     return(prod_detail())
 
-b=[]
+mobile _list=[]
 user=int(input('how much page you want to scrape'))
 
 for bn in range(1,user+1):
@@ -132,12 +132,9 @@ for bn in range(1,user+1):
     page_url=(driver.current_url)+(f"&page={bn}")
 
     ln=lis_of_product_url_in_page(page_url)
-    b.append(ln)
-# print (b)
-with open('flipkart.json','w') as data:
-    json.dump(b,data)
+    mobile_list.append(ln)
+print (mobile_list)
 
-print ("you scraped succesfully")
 
 
 
